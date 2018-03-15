@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hp.dbms">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/dbmsicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".creditspage" />
+        <activity android:name=".Main2Activity" />
+        <activity
+            android:name=".Login_ACTIVITY"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".Abstract" />
+        <activity android:name=".Admin_signup" />
+        <activity
+            android:name=".Admin"
+            android:label="@string/title_activity_admin"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Employee"
+            android:label="@string/title_activity_employee"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Client"
+            android:label="@string/title_activity_client"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".getprodetails" />
+        <activity android:name=".Admin_viewproj" />
+        <activity android:name=".Admin_alloproj" />
+        <activity android:name=".Admin_viewclient" />
+        <activity
+            android:name=".Emp_get_det"
+            android:label="UPDATE PROFILE"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Admin_viewemp" />
+        <activity
+            android:name=".Admin_assign"
+            android:label="ASSIGN A TEAM LEAD" />
+        <activity android:name=".assign_mem"></activity>
+    </application>
+
+</manifest>

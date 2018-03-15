@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.hp.dbms.Client">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppBarOverlay"
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?android:attr/colorAccent"
+                app:popupTheme="@style/PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:id="@+id/lv1" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@mipmap/addnew"
+            android:scaleType="center"
+            app:backgroundTint="@android:color/holo_blue_light"
+            app:fabSize="normal"
+            app:rippleColor="@android:color/transparent"
+            app:elevation="0dp" />
+
+
+
+    </FrameLayout>
+
+
+
+    <include layout="@layout/content_client"
+        android:id="@+id/include" />
+
+
+    <FrameLayout android:layout_height="60dp"
+        android:layout_marginRight="45dp"
+        android:layout_width="60dp"
+        android:layout_gravity="right|top">
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_margin="6dp"
+            android:layout_gravity="top|left"
+            app:fabSize="mini"
+            app:srcCompat="@android:drawable/ic_popup_sync"
+            android:id="@+id/floatingActionButton"
+            android:onClick="showproj"
+            app:layout_anchorGravity="end"
+            app:elevation="0dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="top|right">
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_gravity="top|right"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@android:drawable/ic_lock_power_off"
+            android:id="@+id/floatingActionButton2"
+            android:onClick="logout"
+            app:elevation="0dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginRight="95dp"
+        android:layout_gravity="top|right">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_gravity="top|right"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@android:drawable/ic_menu_delete"
+            android:id="@+id/floatingActionButton7"
+            app:elevation="0dp"
+            android:onClick="delvalues"/>
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>
